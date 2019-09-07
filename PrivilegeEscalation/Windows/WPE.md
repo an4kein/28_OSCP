@@ -70,7 +70,7 @@ source: https://github.com/sagishahar/lpeworkshop
 
 # Startup Applications
 
-    01 -Startup Applications
+    01 - Startup Applications
 
 01 - https://www.youtube.com/watch?v=UnrFo8W-l3M&list=PLjG9EfEtwbvIrGFTx4XctK8IxkUJkAEqP&index=15&t=0s
 
