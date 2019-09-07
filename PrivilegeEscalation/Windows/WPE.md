@@ -2,7 +2,7 @@ source: https://github.com/sagishahar/lpeworkshop
 
 # Kernel
 
-    01 - Kernel
+    01 - Kernel | https://www.youtube.com/watch?v=HTM-BavQvs4&list=PLjG9EfEtwbvIrGFTx4XctK8IxkUJkAEqP&index=2&t=0s
 
 # Services
 
