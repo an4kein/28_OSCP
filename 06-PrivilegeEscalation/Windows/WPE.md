@@ -22,7 +22,7 @@ source: https://github.com/sagishahar/lpeworkshop
 
 01 - https://www.youtube.com/watch?v=7KjCTmSb1PM&list=PLjG9EfEtwbvIrGFTx4XctK8IxkUJkAEqP&index=3&t=0s
 
-Exercises:
+##### Exercises:
 
 Scripts for WPE
 
@@ -32,7 +32,7 @@ Scripts for WPE
     JAWS
     SharpUp
 
-Using powershell with PowerUP.ps1
+###### Using powershell with PowerUP.ps1
 
 > Import-Module .\PowerUp.ps1
 
@@ -45,6 +45,8 @@ AbuseFunction
 Next, check user John added with permissions Administrator.
 
 > net user
+
+
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
@@ -114,7 +116,7 @@ https://pentest.blog/windows-privilege-escalation-methods-for-pentesters/
 https://chryzsh.gitbooks.io/pentestbook/privilege_escalation_windows.html
 
 
-Downloads ISOs for labs:
+Downloads .ISO's for labs:
 
 https://archive.org/advancedsearch.php
 
