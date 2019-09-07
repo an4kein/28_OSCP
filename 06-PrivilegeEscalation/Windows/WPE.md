@@ -34,7 +34,7 @@ AbuseFunction
 
 > Invoke-ServiceAbuse -Name 'daclsvc'
 
-Next, checking you user John create with permissions Administrator.
+Next, check you user John added with permissions Administrator.
 
 > net user
 
