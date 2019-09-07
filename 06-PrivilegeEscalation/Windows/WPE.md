@@ -24,6 +24,14 @@ source: https://github.com/sagishahar/lpeworkshop
 
 Exercises:
 
+Scripts for WPE
+
+    Powerless
+    PowerUp
+    Sherlock / Watson
+    JAWS
+    SharpUp
+
 Using powershell with PowerUP.ps1
 
 > Import-Module .\PowerUp.ps1
@@ -92,3 +100,24 @@ Next, check user John added with permissions Administrator.
     01 - Startup Applications
 
 01 - https://www.youtube.com/watch?v=UnrFo8W-l3M&list=PLjG9EfEtwbvIrGFTx4XctK8IxkUJkAEqP&index=15&t=0s
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Reference:
+
+https://ivanitlearning.wordpress.com/2019/07/26/scripts-for-windows-privilege-escalation/
+
+https://medium.com/@orhan_yildirim/windows-privilege-escalation-insecure-service-permissions-e4f33dbff219
+
+https://pentest.blog/windows-privilege-escalation-methods-for-pentesters/
+
+https://chryzsh.gitbooks.io/pentestbook/privilege_escalation_windows.html
+
+
+Downloads ISOs for labs:
+
+https://archive.org/advancedsearch.php
+
+
+
+
