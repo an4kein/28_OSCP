@@ -22,7 +22,9 @@ source: https://github.com/sagishahar/lpeworkshop
 
 01 - https://www.youtube.com/watch?v=7KjCTmSb1PM&list=PLjG9EfEtwbvIrGFTx4XctK8IxkUJkAEqP&index=3&t=0s
 
-### Exercises:
+## Exercises:
+
+### 01 - Exploitation - Services (binPath)
 
 Scripts for WPE
 
