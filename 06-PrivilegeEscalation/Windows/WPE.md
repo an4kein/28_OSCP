@@ -69,7 +69,12 @@ List users in administrators group
 > net localgroup administrators
 
 ----------------------------------------------------------------------------------------------------------------------------------------
+### 02 - Exploitation - Services (DLL Hijacking)
 
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
 02 - https://www.youtube.com/watch?v=9s8jYwx9FSA&list=PLjG9EfEtwbvIrGFTx4XctK8IxkUJkAEqP&index=4&t=0s
 
 03 - https://www.youtube.com/watch?v=b5Tbgl_Nd-g&list=PLjG9EfEtwbvIrGFTx4XctK8IxkUJkAEqP&index=5&t=0s
