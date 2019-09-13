@@ -109,9 +109,13 @@ agora iniciamos o modo handler.
 
     exploit
 
+### 03 - Exploitation - Services (Unquoted Path)
 
+CMD
+> wmic service get name,pathname,startmode,startname | findstr /i "localsystem" | findstr /v /i "disable" | findstr /i /v "C:\\windows" | findstr /v """
 
-
+PowerShell
+> Get-WmiObject win32_service | select Name,PathName,StartMode,StartName | where {$_.StartMode -ne "Disable" -and $_.StartName -eq "LocalSystem" -and $_.PathName -notmatch "`"" -and $_.PathName -notmatch "C:\\Windows"}
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 02 - https://www.youtube.com/watch?v=9s8jYwx9FSA&list=PLjG9EfEtwbvIrGFTx4XctK8IxkUJkAEqP&index=4&t=0s
