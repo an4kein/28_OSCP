@@ -117,6 +117,15 @@ CMD
 PowerShell
 > Get-WmiObject win32_service | select Name,PathName,StartMode,StartName | where {$_.StartMode -ne "Disable" -and $_.StartName -eq "LocalSystem" -and $_.PathName -notmatch "`"" -and $_.PathName -notmatch "C:\\Windows"}
 
+
+PowerUp
+
+> powershell.exe -nop -ep bypass
+
+> Import-Module .\PowerUp.ps1
+
+> Get-ServiceUnquoted
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 02 - https://www.youtube.com/watch?v=9s8jYwx9FSA&list=PLjG9EfEtwbvIrGFTx4XctK8IxkUJkAEqP&index=4&t=0s
 
