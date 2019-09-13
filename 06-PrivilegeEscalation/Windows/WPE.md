@@ -167,7 +167,7 @@ Agora, paramos o servico e damos start novamente.
 
 > Write-ServiceBinary -Name unquotedsvc -Path 'C:\Program Files\Unquoted Path Service\Common Files'
  
-Foi criado um user JOHN e adicionado no grupo de administrators.
+Foi criado um user JOHN (john Password123!) e adicionado no grupo de administrators.
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------
