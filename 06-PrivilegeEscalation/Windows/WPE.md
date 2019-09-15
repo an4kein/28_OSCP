@@ -181,6 +181,10 @@ Using AccessChk (Sysinternals)
 
 > .\accesschk64.exe -kvusw hklm\system\currentcontrolset\services
 
+or 
+
+> .\accesschk64.exe "Everyone" -kvuqsw hklm\System\CurrentControlSet\services
+
 #### Exploitation
 
 Source: https://www.hackingtutorials.org/exploit-tutorials/mingw-w64-how-to-compile-windows-exploits-on-kali-linux/
