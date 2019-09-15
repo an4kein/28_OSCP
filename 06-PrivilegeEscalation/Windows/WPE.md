@@ -169,6 +169,18 @@ Agora, paramos o servico e damos start novamente.
  
 Foi criado um user JOHN (john Password123!) e adicionado no grupo de administrators.
 
+### 04 - Exploitation - Services (Registry)
+
+#### Detection
+
+Using PowerShell
+
+> Get-Acl HKLM:\SYSTEM\CurrentControlSet\services\regsvc | fl
+
+Using AccessChk (Sysinternals)
+
+> .\accesschk64.exe -kvusw hklm\system\currentcontrolset\services
+
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 02 - https://www.youtube.com/watch?v=9s8jYwx9FSA&list=PLjG9EfEtwbvIrGFTx4XctK8IxkUJkAEqP&index=4&t=0s
