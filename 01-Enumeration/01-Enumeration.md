@@ -3,6 +3,12 @@ source: http://www.0daysecurity.com/penetration-testing/enumeration.html
 
 # Enumeration
 
+### Using masscan, you can scan all TCP and UDP ports in roughly 2-3 minutes.
+
+```
+masscan -p1-65535,U:1-65535 10.10.10.x --rate=1000 -e tun0
+```
+
 FTP port 21 open
 
     Fingerprint server
