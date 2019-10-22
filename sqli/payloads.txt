@@ -1,0 +1,3 @@
+## the best payloads for search injection
+
+https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/SQL%20Injection/MySQL%20Injection.md#using-conditional-statements
