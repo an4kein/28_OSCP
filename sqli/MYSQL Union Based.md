@@ -63,7 +63,8 @@ find errors, and interpreter. For example:
 1--  out: no error  (Booowww)
 1-- -  out: no error
 
-Continued
+Continue
+
 1 and true;-- -    out: no error
 1 and false;-- -   out: Invalid Input parameter
 
