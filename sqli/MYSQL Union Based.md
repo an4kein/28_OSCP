@@ -1,4 +1,4 @@
-##MYSQL Union Based
+## MYSQL Union Based
 
 ### Extract database with information_schema
 
