@@ -8,6 +8,11 @@ source: http://www.0daysecurity.com/penetration-testing/enumeration.html
 - [ftp enumeration](#ftp-enumeration)
     - [Fingerprint server](#Fingerprint-server)
     - [Password guessing](#Password-guessing)
+- [ssh enumeration](#ssh-enumeration)
+    - [Fingerprint server](#Fingerprint-server)
+    - [Password guessing](#Password-guessing)
+    - [Examine configuration files](#Examine-configuration-files)
+    - [SSH Client programs](#SSH-Client-programs)
     
 # Enumeration
 
@@ -57,13 +62,25 @@ MiTM
     pasvagg.pl
 ```
 
-SSH
+# ssh-enumeration
 
-    Fingerprint server
+### Fingerprint server
+
+```
         telnet ip_address 22 (banner grab)
+        
         scanssh
             scanssh -p -r -e excludes random(no.)/Network_ID/Subnet_Mask
-    Password guessing
+            
+        ssh_scan https://github.com/0xC2-0xC2/ssh_scan #recommended
+        
+        `ssh_scan -t 192.168.1.1`
+            
+```
+            
+### Password guessing
+
+```
         ssh root@ip_address
         guess-who
             ./b -l username -h ip_address -p 22 -2 < password_file_location
@@ -71,19 +88,30 @@ SSH
         brutessh
         Ruby SSH Bruteforcer
         
-    ssh-user-enumeration
-        https://github.com/BlackDiverX/ssh-user-enumeration
-    Examine configuration files
+        ssh-user-enumeration
+                 - https://github.com/BlackDiverX/ssh-user-enumeration
+        
+        
+```        
+### Examine configuration files
+
+```
         ssh_config
         sshd_config
         authorized_keys
         ssh_known_hosts
         .shosts
-    SSH Client programs
+```
+
+
+### SSH Client programs
+
+```
         tunnelier
         winsshd
         putty
         winscp
+```
 
 Telnet port 23 open
 
