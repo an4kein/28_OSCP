@@ -36,9 +36,13 @@ ftp ip_addressUsername: anonymous OR anonPassword: any@email.com
 ```        
             
 ### Password guessing
-[Hydra brute force](https://github.com/vanhauser-thc/thc-hydra)
-[medusa](https://github.com/jmk-foofus/medusa)
+
+[Hydra brute force](https://github.com/vanhauser-thc/thc-hydra) 
+
+[medusa](https://github.com/jmk-foofus/medusa) 
+
 [Brutus](https://github.com/LittleBigHack/Brutus-Password-Cracker)
+
 [Patator](https://github.com/lanjelot/patator)     <<<--- Recommended
 
 Examine configuration files
