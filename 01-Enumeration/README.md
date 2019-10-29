@@ -19,9 +19,7 @@ Using masscan, you can scan all TCP and UDP ports in roughly 2-3 minutes.
 masscan -p1-65535,U:1-65535 10.10.10.x --rate=1000 -e tun0
 ```
 
-### ftp
-
-## ftp enumeration
+# ftp enumeration
 
 ### Fingerprint server
 
@@ -46,13 +44,20 @@ ftp ip_addressUsername: anonymous OR anonPassword: any@email.com
 [Patator](https://github.com/lanjelot/patator)     <<<--- Recommended
 
 Examine configuration files
-        `ftpusers`
-        `ftp.conf`
-        `proftpd.conf`
-MiTM
-        `pasvagg.pl`
 
-SSH port 22 open
+```
+    ftpusers
+    ftp.conf
+    proftpd.conf
+```
+
+MiTM
+
+```
+    pasvagg.pl
+```
+
+SSH
 
     Fingerprint server
         telnet ip_address 22 (banner grab)
