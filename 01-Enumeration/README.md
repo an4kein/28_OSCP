@@ -70,6 +70,9 @@ SSH
         Hydra brute force
         brutessh
         Ruby SSH Bruteforcer
+        
+    ssh-user-enumeration
+        https://github.com/BlackDiverX/ssh-user-enumeration
     Examine configuration files
         ssh_config
         sshd_config
