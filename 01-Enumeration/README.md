@@ -9,12 +9,12 @@ by: Eduardo Barbosa (@Anake)  :alien::smiling_imp::boom:
     - [masscan](#masscan)
     - [nmap](#nmap)
 - [ftp enumeration](#ftp-enumeration)
-    - [Fingerprint server](#Fingerprint-server)
+    - [Fingerprint server ftp](#Fingerprint-server-ftp)
     - [Password guessing](#Password-guessing)
     - [Examine configuration files](#Examine-configuration-files)
     - [MiTM](#MiTM)
 - [ssh enumeration](#ssh-enumeration)
-    - [Fingerprint server](#Fingerprint-server)
+    - [Fingerprint server ssh](#Fingerprint-server-ssh)
     - [Password guessing](#Password-guessing)
     - [Examine configuration files](#Examine-configuration-files)
     - [SSH Client programs](#SSH-Client-programs)
@@ -37,7 +37,7 @@ nmap -sV -sC -oN nmap/init 192.168.1.1
 
 # ftp enumeration
 
-### Fingerprint server
+### Fingerprint server ftp
 
 `telnet ip_address 21`  # (Banner grab)
 
@@ -75,7 +75,7 @@ ftp ip_addressUsername: anonymous OR anonPassword: any@email.com
 
 # ssh-enumeration
 
-### Fingerprint server
+### Fingerprint server ssh
 
 ```
         telnet ip_address 22 (banner grab)
