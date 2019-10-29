@@ -11,6 +11,8 @@ by: Eduardo Barbosa (@Anake)  :alien::smiling_imp::boom:
 - [ftp enumeration](#ftp-enumeration)
     - [Fingerprint server](#Fingerprint-server)
     - [Password guessing](#Password-guessing)
+    - [Examine configuration files](#Examine-configuration-files)
+    - [MiTM](#MiTM)
 - [ssh enumeration](#ssh-enumeration)
     - [Fingerprint server](#Fingerprint-server)
     - [Password guessing](#Password-guessing)
@@ -57,7 +59,7 @@ ftp ip_addressUsername: anonymous OR anonPassword: any@email.com
 
 [Patator](https://github.com/lanjelot/patator)     <<<--- Recommended
 
-Examine configuration files
+### Examine configuration files
 
 ```
     ftpusers
@@ -65,7 +67,7 @@ Examine configuration files
     proftpd.conf
 ```
 
-MiTM
+### MiTM
 
 ```
     pasvagg.pl
