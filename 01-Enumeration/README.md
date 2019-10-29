@@ -1,5 +1,8 @@
+# Evil Enumeration :smiling_imp:
 
-source: http://www.0daysecurity.com/penetration-testing/enumeration.html
+Inspired by: [0daysecurity](http://www.0daysecurity.com/penetration-testing/enumeration.html)
+
+by: Eduardo Barbosa (@Anake)  :alien::smiling_imp::boom: 
 
 
 - [Enumeration](#Enumeration)
