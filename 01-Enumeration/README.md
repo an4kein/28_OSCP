@@ -7,7 +7,7 @@ by: Eduardo Barbosa (@Anake)  :alien::smiling_imp::boom:
 
 - [Enumeration](#Enumeration)
     - [masscan](#masscan)
-    - [ftp](#ftp)
+    - [nmap](#nmap)
 - [ftp enumeration](#ftp-enumeration)
     - [Fingerprint server](#Fingerprint-server)
     - [Password guessing](#Password-guessing)
@@ -24,7 +24,13 @@ by: Eduardo Barbosa (@Anake)  :alien::smiling_imp::boom:
 Using masscan, you can scan all TCP and UDP ports in roughly 2-3 minutes.
 
 ```
-masscan -p1-65535,U:1-65535 10.10.10.x --rate=1000 -e tun0
+masscan -p1-65535,U:1-65535 192.168.1.X --rate=1000 -e eth0
+```
+
+### nmap
+
+```
+nmap -sV -sC -oN nmap/init 192.168.1.1
 ```
 
 # ftp enumeration
