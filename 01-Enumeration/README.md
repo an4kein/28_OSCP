@@ -1,32 +1,52 @@
 
 source: http://www.0daysecurity.com/penetration-testing/enumeration.html
 
+
+- [Enumeration](#Enumeration)
+    - [masscan](#masscan)
+    - [ftp](#ftp)
+- [ftp enumeration](#ftp-enumeration)
+    - [Fingerprint server](#Fingerprint-server)
+    - [Password guessing](#Password-guessing)
+    
 # Enumeration
 
-### Using masscan, you can scan all TCP and UDP ports in roughly 2-3 minutes.
+### masscan
+
+Using masscan, you can scan all TCP and UDP ports in roughly 2-3 minutes.
 
 ```
 masscan -p1-65535,U:1-65535 10.10.10.x --rate=1000 -e tun0
 ```
 
-FTP port 21 open
+### ftp
 
-    Fingerprint server
-        telnet ip_address 21 (Banner grab)
-        Run command ftp ip_address
-        ftp@example.com
-        Check for anonymous access
-            ftp ip_addressUsername: anonymous OR anonPassword: any@email.com
-    Password guessing
-        Hydra brute force
-        medusa
-        Brutus
-    Examine configuration files
-        ftpusers
-        ftp.conf
-        proftpd.conf
-    MiTM
-        pasvagg.pl
+## ftp enumeration
+
+### Fingerprint server
+
+`telnet ip_address 21`  # (Banner grab)
+
+```
+`ftp ip_address`        # Try connect anonymous user and password anonymous
+
+ftp@example.com
+Check for anonymous access
+ftp ip_addressUsername: anonymous OR anonPassword: any@email.com
+```        
+            
+### Password guessing
+[Hydra brute force](https://github.com/vanhauser-thc/thc-hydra)
+[medusa](https://github.com/jmk-foofus/medusa)
+[Brutus](https://github.com/LittleBigHack/Brutus-Password-Cracker)
+[Patator](https://github.com/lanjelot/patator)     <<<--- Recommended
+
+Examine configuration files
+        `ftpusers`
+        `ftp.conf`
+        `proftpd.conf`
+MiTM
+        `pasvagg.pl`
 
 SSH port 22 open
 
